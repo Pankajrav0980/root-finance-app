@@ -1,0 +1,13 @@
+# Root Finance – Customer Loan Dashboard
+
+Ek simple web app jo "Root Finance" business ke liye banaya gaya hai:
+- Loan customers ko add karein, EMI calculate, overdue track karein.
+- Secure login (admin) + PDF export feature hai.
+
+## 🔧 Setup Karne Ka Tarika
+
+1. npm install backend dependencies ke liye.
+2. .env.example ko rename karke .env file banayein aur apna *MongoDB URI, **JWT secret, aur **Admin credential* daliye.
+3. Terminal mein npm start run karein.
+4. Browser mein frontend/login.html open karein, login karne ke baad dashboard khulega.
+5. Dashboard se customer add karein, list dekhein, aur PDF export karein.

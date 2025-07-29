@@ -1,0 +1,22 @@
+<!-- frontend/dashboard.html -->
+<!DOCTYPE html><html lang="hi">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Root Finance Dashboard</title><link rel="stylesheet" href="style.css"></head>
+<body>
+  <header><h1>Root Finance</h1><button id="exportPdf">Export PDF</button><button id="logoutBtn">Logout</button></header>
+  <section>
+    <form id="addForm">
+      <input type="text" id="name" placeholder="Customer Name" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="tel" id="phone" placeholder="Phone" required>
+      <input type="number" id="loan" placeholder="Loan Amount" required>
+      <input type="number" id="interest" placeholder="Interest (%)" required>
+      <input type="number" id="months" placeholder="Loan Months" required>
+      <input type="date" id="startDate" required>
+      <button type="submit">Add Customer</button>
+    </form>
+    <table><thead><tr><th>Name</th><th>Loan</th><th>EMI</th><th>Overdue</th><th>Action</th></tr></thead><tbody id="tbody"></tbody></table>
+  </section>
+  <div id="modal" class="modal"><div class="modal-content"><span id="close">&times;</span><div id="detail"></div></div></div>
+  <script src="app.js"></script>
+</body></html>
